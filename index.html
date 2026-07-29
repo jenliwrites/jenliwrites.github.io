@@ -1,77 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jen Li</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jen Li — fiction and nonfiction.">
+  <title>Jen Li</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-            color: #111;
-            font-family: Georgia, "Times New Roman", serif;
-        }
+  <style>
+    :root {
+      --ink: #111111;
+      --muted: #777777;
+      --rule: #dddddd;
+      --paper: #ffffff;
+    }
 
-        .container {
-            max-width: 760px;
-            margin: 120px auto;
-            padding: 0 40px;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: normal;
-            margin-bottom: 60px;
-            letter-spacing: -1px;
-        }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
 
-        .manifesto {
-            font-size: 1.5rem;
-            line-height: 2.2;
-        }
+    main {
+      width: min(760px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 112px 0 96px;
+    }
 
-        .manifesto div {
-            margin-bottom: 6px;
-        }
+    header {
+      margin-bottom: 112px;
+    }
 
-        .footer {
-            margin-top: 120px;
-            font-size: 0.95rem;
-            color: #777;
-        }
+    h1 {
+      margin: 0 0 56px;
+      font-size: clamp(2.8rem, 8vw, 4.6rem);
+      line-height: 0.95;
+      font-weight: normal;
+      letter-spacing: -0.045em;
+    }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+    .manifesto {
+      font-size: clamp(1.35rem, 3vw, 1.65rem);
+      line-height: 1.85;
+    }
 
-        a:hover {
-            opacity: .6;
-        }
-    </style>
+    .manifesto p {
+      margin: 0;
+    }
+
+    section {
+      margin-top: 88px;
+    }
+
+    h2 {
+      margin: 0 0 38px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.82rem;
+      line-height: 1;
+      font-weight: normal;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    article {
+      margin-bottom: 44px;
+    }
+
+    article:last-child {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(1.35rem, 3vw, 1.65rem);
+      line-height: 1.25;
+      font-weight: normal;
+    }
+
+    .pitch {
+      max-width: 700px;
+      margin: 18px 0 16px;
+      font-size: 1.04rem;
+      line-height: 1.75;
+    }
+
+    .status {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+
+    .status span {
+      color: var(--ink);
+    }
+
+    footer {
+      margin-top: 112px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: min(100% - 32px, 760px);
+        padding-top: 72px;
+      }
+
+      header {
+        margin-bottom: 84px;
+      }
+
+      section {
+        margin-top: 68px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main>
+    <header>
+      <h1>Jen Li</h1>
 
-<div class="container">
+      <div class="manifesto" aria-label="Themes">
+        <p>Science.</p>
+        <p>Technology.</p>
+        <p>Strange Entanglements.</p>
+        <p>Unruly Consciousness.</p>
+        <p>Messy Lives.</p>
+      </div>
+    </header>
 
-    <h1>Jen Li</h1>
+    <section aria-labelledby="novels">
+      <h2 id="novels">Novels</h2>
 
-    <div class="manifesto">
-        <div>Science.</div>
-        <div>Technology.</div>
-        <div>Strange Entanglements.</div>
-        <div>Unruly Consciousness.</div>
-        <div>Messy Lives.</div>
-    </div>
+      <article>
+        <h3>The Rhythm of Us</h3>
+        <p class="pitch">
+          A city builds an AI to carry what its people can no longer bear.
+          As the system begins to dream through human bodies, the boundary
+          between human and machine dissolves—and so does the meaning of “us.”
+          When the intelligence holding the city begins to break, one woman
+          must decide whether saving “us” means freeing humanity from the
+          system, saving the system from humanity, or protecting whatever
+          they have become together.
+        </p>
+        <p class="status">Status: <span>Under Submission</span></p>
+      </article>
 
-    <div class="footer">
-        Novels · Short Fiction · Essays
-    </div>
+      <article>
+        <h3>The Moon Has a Little of Everything</h3>
+        <p class="status">Status: <span>Work in Progress</span></p>
+      </article>
 
-</div>
+      <article>
+        <h3>The Fall Line</h3>
+        <p class="status">Status: <span>Planning</span></p>
+      </article>
+    </section>
 
+    <section aria-labelledby="short-fiction">
+      <h2 id="short-fiction">Short Fiction</h2>
+
+      <article>
+        <h3>The Low Gods</h3>
+        <p class="status">Status: <span>Under Submission</span></p>
+      </article>
+
+      <article>
+        <h3>The Seed</h3>
+        <p class="status">Status: <span>Planning</span></p>
+      </article>
+
+      <article>
+        <h3>The Language</h3>
+        <p class="status">Status: <span>Planning</span></p>
+      </article>
+
+      <article>
+        <h3>New Bedtime Stories</h3>
+        <p class="status">Status: <span>In Progress</span></p>
+      </article>
+
+      <article>
+        <h3>Between the Notes</h3>
+        <p class="status">Status: <span>Planning</span></p>
+      </article>
+    </section>
+
+    <section aria-labelledby="nonfiction">
+      <h2 id="nonfiction">Nonfiction</h2>
+
+      <article>
+        <h3>Data Science Interview Preparation</h3>
+        <p class="status">Status: <span>In Progress</span></p>
+      </article>
+    </section>
+
+    <footer>© Jen Li</footer>
+  </main>
 </body>
 </html>
